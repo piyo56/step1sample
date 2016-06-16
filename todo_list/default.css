@@ -1,0 +1,26 @@
+body {
+    background-color: #222;
+}
+
+#main {
+    width: 600px;
+    margin: 20px auto;
+    background-color: #EEE;
+    padding: 20px 20px;
+}
+
+h2 {
+    width: 560px;
+    margin: 20px auto;
+}
+
+#new_task {
+    width: 480px;
+    height: 40px;
+    text-align: center;
+}
+
+#submit_button {
+    width: 80px;
+    height: 40px;
+}
