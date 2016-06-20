@@ -34,16 +34,10 @@ h2 {
 }
 
 .list_button {
-    background: #EEE;
-    border-top: 3px solid #DDD;
-    border-left: 3px solid #DDD;
-    border-right: 3px solid #BBB;
-    border-bottom: 3px solid #BBB;
-    color:#111;
+    height: 40px;
     margin: 10px 5px;
     font-size: 12pt;
     float: left;
-    height: 40px;
 }
 
 .container {
@@ -51,11 +45,25 @@ h2 {
 }
 
 .task_button {
+    background: #EEE;
+    border-top: 3px dotted #DDD;
+    border-left: 3px solid #DDD;
+    border-right: 3px solid #DDD;
+    border-bottom: 3px dotted #DDD;
+
+    color:#111;
     width: 450px;
     padding: 0px 30px;
 }
 
 .done_button {
+    background: #EEE;
+    border-top: 3px solid #DDD;
+    border-left: 3px solid #DDD;
+    border-right: 3px solid #BBB;
+    border-bottom: 3px solid #BBB;
+    color: #111;
+
     width: 50px;
     text-align: center;
 }

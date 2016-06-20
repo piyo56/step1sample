@@ -1,8 +1,13 @@
+//TODO
+// - 入力チェック
+// - デザインをもう少しマシに
+// (- 登録した日付とかその他オプション)
+
 var save_key = "todo_list";
 var tasks = [];
 
-$(loaded);
-function loaded(){
+$(waitForEvent);
+function waitForEvent(){
     init();
     $("#add_button").click(addTask);
     $(".done_button").click(function(){
@@ -52,6 +57,7 @@ function addTask(){
         printTasks();
         $("#new_task").val("");
     }
+    $(waitForEvent);
 }
 
 function deleteTask(task_id){
@@ -65,9 +71,5 @@ function deleteTask(task_id){
 
     //表示
     printTasks();
-    
-    //TODO
-    //addは自然に連続で実行できるのに，deleteは
-    //最後にloaded関数を呼んでおかないと連続で実行できない
-    $(loaded);
+    $(waitForEvent);
 }
