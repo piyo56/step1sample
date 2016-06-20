@@ -1,26 +1,32 @@
 body {
-    background-color: #222;
+    background-color: #EEE;
 }
 
 #main {
     width: 600px;
     margin: 20px auto;
-    background-color: #EEE;
     padding: 20px 20px;
 }
 
+#input, #output {
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px 10px;
+    background-color: #EEE;
+}
+
 h2 {
-    width: 560px;
+    width: 600px;
     margin: 20px auto;
 }
 
 #new_task {
     width: 480px;
     height: 40px;
-    text-align: center;
+    padding: 0px 10px;
 }
 
-#submit_button {
+#add_button {
     width: 80px;
     height: 40px;
 }

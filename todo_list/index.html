@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8"　/>
-  <title>TODO list</title>
-  <link rel="stylesheet" href="default.css">
-</head>
-<body>
-  <div id="main">
-    <h2 style="display: none" id="result"></h2>
-    <form method="post" onsubmit="addTask(); return false;">
-      <input type="text" id="new_task" name="new_task" value="タスクを入力">
-      <input type="submit" id="submit_button" value="送信">
-    </form>
-  </div>
-
-  <script type="text/javascript" src="main_script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>TODO list</title>
+        <link rel="stylesheet" href="default.css">
+        <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="input">
+            <h2 style="display: none"></h2>
+            <input type="text" id="new_task" maxlength="30">
+            <button id="add_button">追加</button>
+        </div>
+        <div id="output">
+            <h2 style="display: none"></h2>
+            <fieldset id="todo_list">
+                <legend>TODO</legend>
+                <ul></ul>
+            </fieldset>
+        </div>
+    </body>
 </html>
