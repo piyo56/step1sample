@@ -1,18 +1,12 @@
 body {
-    background-color: #EEE;
-}
-
-#main {
-    width: 600px;
-    margin: 20px auto;
-    padding: 20px 20px;
+    background-color: #FFF;
 }
 
 #input, #output {
     width: 600px;
     margin: 10px auto;
     padding: 10px 10px;
-    background-color: #EEE;
+    background-color: #FFF;
 }
 
 h2 {
@@ -21,12 +15,59 @@ h2 {
 }
 
 #new_task {
-    width: 480px;
+    width: 470px;
     height: 40px;
     padding: 0px 10px;
+    font-size: 13pt;
 }
 
 #add_button {
-    width: 80px;
+    background: #EEE;
+    border-top: 3px solid #DDD;
+    border-left: 3px solid #DDD;
+    border-right: 3px solid #BBB;
+    border-bottom: 3px solid #BBB;
+    color: #111;
+    width: 100px;
+    height: 40px;
+    font-size: 11pt;
+}
+
+.list_button {
+    background: #EEE;
+    border-top: 3px solid #DDD;
+    border-left: 3px solid #DDD;
+    border-right: 3px solid #BBB;
+    border-bottom: 3px solid #BBB;
+    color:#111;
+    margin: 10px 5px;
+    font-size: 12pt;
+    float: left;
     height: 40px;
 }
+
+.container {
+    overflow: hidden;
+}
+
+.task_button {
+    width: 450px;
+    padding: 0px 30px;
+}
+
+.done_button {
+    width: 50px;
+    text-align: center;
+}
+/*
+.btn {
+    background: #EEE;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    color:#111;
+    margin: 10px 0;
+    padding: 10px 30px;
+}
+*/

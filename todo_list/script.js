@@ -5,8 +5,7 @@ $(loaded);
 function loaded(){
     init();
     $("#add_button").click(addTask);
-    //$("#delete_button").click(deleteTask);
-}
+};
 
 function init(){
     console.log("init");
@@ -19,13 +18,24 @@ function init(){
 
 function printTasks(){
     console.log("print");
-    var target_div = "#todo_list ul";
+    var target_div = "#output";
+    var task_div = "";
+
+    console.log(task_div);
 
     //一度divを空にしてからtodoリスト(tasks)の中身を表示
     $(target_div).html("");
     for(var i=0; i<tasks.length; i++) {
+        task_div = '<div class="container">' +
+                       '<div class="list_button task_button" id="task' + i + '">' +
+                           tasks[i] +
+                       '</div>' +
+                       '<div class="list_button done_button" id="task' + i + '">' +
+                           'done' +
+                       '</div>' +
+                   '</div>';
         console.log(tasks[i]);
-        $(target_div).append("<li>"+tasks[i]+"</li>")
+        $(target_div).append(task_div);
     }
 }
 
@@ -43,12 +53,4 @@ function addTask(){
         $("#new_task").val("");
     }
 }
-
-function deleteSavedText(){
-    //ローカルストレージと配列を空にして
-
-    //表示
-    printTasks();
-}
-
 
